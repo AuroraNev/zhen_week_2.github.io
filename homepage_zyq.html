@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人主页</title>
+    <!-- 引入 Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background:
+                linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+                url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTcxdDNndTZsaXM1Z2JmM2k1b3M0M3lnZTQ4bDFpNWNtMDJ5czZ4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9LnHkXizFvweIw1U7O/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Microsoft YaHei', sans-serif;
+            padding: 20px;
+        }
+        .profile-card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            padding: 40px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            z-index: 1;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .btn-custom {
+            margin: 10px;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .btn-custom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <img src="./my_photo.jpg" alt="头像" class="profile-pic">
+    <h1>甄元琪</h1>
+    <p>大家好！我是甄元琪，北京大学元培学院历史学本科在读，对数据分析抱有浓厚的兴趣。以下是人工智能与计算思维课程中的两个作业项目，敬请点击浏览！</p>
+    <div>
+        <a href="https://www.example1.com" class="btn btn-primary btn-custom">千里搜索</a>
+        <a href="https://www.example2.com" class="btn btn-success btn-custom">古籍词频</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS（可选） -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
